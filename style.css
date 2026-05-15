@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Title styling */
+  .title {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  
+  .gallery img {
+    width: 140px;
+    height: 90px;
+    object-fit: cover;
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .gallery img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Layout for the grid */
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* Modal = popup */
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+  }
+  
+  .modal img {
+    width: 60%;
+    max-width: 700px;
+    border-radius: 10px;
+  }
+  
+  .modal p {
+    color: white;
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  
+  /* Close button */
+  .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  /* Hidden class */
+  .hidden {
+    display: none;
+  }
+  
